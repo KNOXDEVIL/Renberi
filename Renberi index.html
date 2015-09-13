@@ -1,0 +1,192 @@
+<!Doctype.html>
+
+<html>
+<head><title>Renberi.com</title>
+<style>
+body{margin:0px;}
+#topbar {
+	background:webkit-linear-gradient(#666, #000);
+	background:linear-gradient(#666, #000);
+	height:90px;
+	}
+#topbar #logo{
+	float:left;
+	width:140px;
+	height:35px;
+	margin:0px 0px 0px 50px;
+	font-size:80px;
+	color:#CC0000;
+	}
+#topbar > #login > button{
+	position:absolute;
+	top:20px;
+	left:1700px;
+	font-size:20px;
+	text-decoration:none;
+	height:40px;
+	width:150px;
+	color:#FFF;
+	border:2px solid #FFF;
+	border-radius:6px 6px 6px 6px;
+	text-shadow:2px 2px 2px #000;
+	text-align:center;
+	background:webkit-linear-gradient(#3399FF, #99CCFF);
+	background:linear-gradient(#3399FF, #99CCFF);
+	line-height:20px;
+	}
+#topbar > #login > button:active{	
+	background:webkit-linear-gradient(#99CCFF, #3399FF);
+	background:linear-gradient(#99CCFF, #3399FF);
+	}
+#topbar > #login_panel{
+	position:absolute;
+	top:90px;
+	left:1650px;
+	height:0px;
+	width:230px;
+	background:#C0C0C0;
+	border-radius:0px 0px 8px 8px;
+	box-shadow:10px 10px 10px #666;
+	overflow:hidden;
+	Z-index:10000;
+	transition:height 0.3s linear 0s;
+	}
+#topbar > #login_panel > form{
+	text-align:center;
+	font-size:25px;
+	padding-top:40px;
+	}
+#topbar > #login_panel > form > #submit{
+	font-size:20px;
+	height:40px;
+	width:150px;
+	color:#FFF;
+	border:2px solid #FFF;
+	border-radius:6px 6px 6px 6px;
+	text-shadow:2px 2px 2px #000;
+	text-align:center;
+	background:webkit-linear-gradient(#3399FF, #99CCFF);
+	background:linear-gradient(#3399FF, #99CCFF);
+	line-height:20px;
+	}
+#topbar > #login_panel > form > #submit:active{
+	background:webkit-linear-gradient(#99CCFF, #3399FF);
+	background:linear-gradient(#99CCFF, #3399FF);
+	}
+#topbar > #login_panel > form > #submit{
+	position:absolute;
+	top:225px;
+	left:45px;
+	}
+#topbar > #login_panel > form > #user{
+	height:35px;
+	width:200px;
+	font-size:20px
+	}
+#topbar > #login_panel > form > #form-password{
+	height:35px;
+	width:200px;
+	font-size:20px
+	}
+#panel{
+	position:absolute;
+	top:90px;
+	left:300px;
+	height:700px;
+	width:1300px;
+	background:#C0C0C0;
+	border-radius:0px 0px 8px 8px;
+	box-shadow:10px 10px 10px #666;
+	}
+	
+#panel > #panel_welcome{
+	position:absolute;
+	top:50px;
+	left:50px;
+	font-size:90px;
+	border
+	}
+#panel > #line{
+	margin:155px 40px 0px 40px;
+	}
+p {
+	position: absolute;
+	top:200px;
+	left:60px;
+	font-size:40px;
+	margin: 65px 65px 75px 40px;
+	}
+#create a{
+	position:absolute;
+	top:550px;
+	left:970px;
+	font-size:30px;
+	text-decoration:none;
+	height:70px;
+	width:250px;
+	color:#FFF;
+	border:2px solid #FFF;
+	border-radius:6px 6px 6px 6px;
+	text-shadow:2px 2px 2px #000;
+	text-align:center;
+	background:webkit-linear-gradient(#3399FF, #99CCFF);
+	background:linear-gradient(#3399FF, #99CCFF);
+	line-height:60px;
+	}
+#create a:active{
+	background:webkit-linear-gradient(#99CCFF, #3399FF);
+	background:linear-gradient(#99CCFF, #3399FF);
+	}
+
+
+</style>
+
+<script>
+function toggleNavPanel(x){
+	var panel = document.getElementById(x), navarrow = document.getElementById ("navarrow"), maxH = "300px";
+		if (panel.style.height == maxH){
+	    panel.style.height = "0px";
+		navarrow.innerHTML = "&#9662;";
+	} else {
+	panel.style.height = maxH;
+	navarrow.innerHTML = "&#9652;";
+	}
+}
+</script>
+
+</head>
+<body>
+
+<div id="topbar">
+	<div id="logo">Renberi</div>
+	<div id="login">
+		<button onclick="toggleNavPanel('login_panel')"> Login <span id="navarrow">&#9662;</span></button>
+	</div>
+	<div id="login_panel">
+		<form>
+			Username:<br/>
+			<input id="user" type="text"  maxlength="20"/>
+			<br/>
+			Password:<br/>
+			<input id="form-password" type="password"  maxlength="12"/>
+			<br/><br/>
+			<input id="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</div> 
+	
+<div id="panel">
+		<div id="panel_welcome">Welcome!</div>
+		<div id="line"><hr/></div>
+		<p> <strong>Renberi.com</strong> is a free sexually-driven adult social media website. Designed for users to 
+			view and share posts, pictures and videos of thier most provacative self. Who knows- maybe even an occasional
+			rendezvous from one of your admirers.
+		</p>
+		<div id="create">
+		<a href="#">Create Account</a>
+		</div>
+</div>
+
+
+</body>
+</html>
